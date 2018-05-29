@@ -6,7 +6,7 @@ var dog = new Discord.Client();
 var cat = new Discord.Client();
 
 dog.on("message", function(m) {
-  if (/gateau/i.test(m.content))
+  if (/g[aâ]teau|\bchien\b|saucisson|\bjo\b/i.test(m.content))
     m.react(m.guild.emojis.get("450743543850467330"));
 });
 
@@ -52,5 +52,9 @@ dog
 
 cat
   .login(config.token.cat)
-  .then(console.log)
-  .catch(console.error);
+  .then(function(string) {
+    console.log("Connection successful :" + string);
+  })
+  .catch(function(reason) {
+    console.error("Connection failed : " + reason.toString());
+  });
