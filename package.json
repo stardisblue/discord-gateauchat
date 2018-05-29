@@ -1,0 +1,15 @@
+{
+  "name": "discord-jo",
+  "version": "1.0.0",
+  "description": "gateau !",
+  "main": "index.js",
+  "author": "stardisblue",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
