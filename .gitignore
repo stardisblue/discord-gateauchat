@@ -113,3 +113,4 @@ typings/
 .idea/
 
 /config.json
+dist
