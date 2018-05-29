@@ -11,7 +11,7 @@ dog.on("message", function(m) {
 });
 
 cat.on("message", function(m) {
-  if (/\bchat\b/i.test(m.content))
+  if (/\bchat\b|\bninouille\b|\bmimine\b/i.test(m.content))
     m.react(m.guild.emojis.get("450395094869344276"));
 });
 
