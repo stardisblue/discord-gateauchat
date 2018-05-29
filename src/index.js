@@ -1,5 +1,5 @@
 import { Client } from "discord.js";
-import { token } from "./config.json";
+import { token } from "../config.json";
 
 // chien : 450743543850467330
 // chat : 450395094869344276
