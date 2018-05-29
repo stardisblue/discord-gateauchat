@@ -52,9 +52,5 @@ dog
 
 cat
   .login(config.token.cat)
-  .then(function(string) {
-    console.log("Connection successful :" + string);
-  })
-  .catch(function(reason) {
-    console.error("Connection failed : " + reason.toString());
-  });
+  .then(console.log)
+  .catch(console.error);
